@@ -1,0 +1,3 @@
+rootProject.name = 'spring-hibernate-projects'
+include 'beans-injection'
+
