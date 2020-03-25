@@ -1,3 +1,5 @@
+package xml;
+
 public class LuckyGamblingMachine implements GamblingMachine {
 
     private MessageService messageService;

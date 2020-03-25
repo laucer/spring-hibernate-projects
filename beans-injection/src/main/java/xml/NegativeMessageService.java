@@ -1,3 +1,5 @@
+package xml;
+
 public class NegativeMessageService implements MessageService{
     @Override
     public String getMessage() {
@@ -6,6 +8,6 @@ public class NegativeMessageService implements MessageService{
 
     @Override
     public void init() {
-        System.out.println("NegativeMessageService init");
+        System.out.println("xml.NegativeMessageService init");
     }
 }

@@ -9,13 +9,13 @@
 
     <bean
             id="messageService"
-            class="PositiveMessageService"
+            class="xml.PositiveMessageService"
             init-method="init"
     />
 
     <bean
             id="gamblingMachine"
-            class="LuckyGamblingMachine">
+            class="xml.LuckyGamblingMachine">
         <constructor-arg ref="messageService" />
     </bean>
 
