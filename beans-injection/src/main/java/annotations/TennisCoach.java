@@ -2,10 +2,17 @@ package annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
+
+    @Value("${user.nick}")
+    private String name;
+
+    @Value("${user.email}")
+    private String email;
 
     @Autowired
     @Qualifier("sadFortuneService")
@@ -19,6 +26,16 @@ public class TennisCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getEmail() {
+        return email;
     }
 
 }
