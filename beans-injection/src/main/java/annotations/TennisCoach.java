@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 @Scope("prototype")
 public class TennisCoach implements Coach {
@@ -15,6 +18,16 @@ public class TennisCoach implements Coach {
 
     @Value("${user.email}")
     private String email;
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("postConstruct()");
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("preDestroy()");
+    }
 
     @Autowired
     @Qualifier("sadFortuneService")
