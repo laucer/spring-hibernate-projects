@@ -9,5 +9,6 @@ public class Main {
         GamblingMachine gamblingMachine = context.getBean("gamblingMachine", GamblingMachine.class);
         System.out.println(gamblingMachine.draw());
         System.out.println(gamblingMachine.getMessage());
+        context.close();
     }
 }
