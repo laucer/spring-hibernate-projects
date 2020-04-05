@@ -1,3 +1,6 @@
 rootProject.name = 'spring-hibernate-projects'
 include 'beans-injection'
+include 'mvc'
+include 'mvc-demo'
+include 'model-view-controller'
 
