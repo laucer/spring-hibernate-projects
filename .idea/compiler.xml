@@ -4,6 +4,10 @@
     <bytecodeTargetLevel>
       <module name="spring-hibernate-projects.beans-injection(annotations).main" target="1.8" />
       <module name="spring-hibernate-projects.beans-injection(annotations).test" target="1.8" />
+      <module name="spring-hibernate-projects.model-view-controller.main" target="1.8" />
+      <module name="spring-hibernate-projects.model-view-controller.test" target="1.8" />
+      <module name="spring-hibernate-projects.mvc-demo.main" target="1.8" />
+      <module name="spring-hibernate-projects.mvc-demo.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

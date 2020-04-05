@@ -10,9 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/beans-injection" />
-            <option value="$PROJECT_DIR$/model-view-controller" />
             <option value="$PROJECT_DIR$/mvc" />
-            <option value="$PROJECT_DIR$/mvc-demo" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

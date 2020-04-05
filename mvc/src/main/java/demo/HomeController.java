@@ -8,7 +8,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String showMyPage() {
-        System.out.print("I AM HERE");
         return "main-menu";
     }
 
