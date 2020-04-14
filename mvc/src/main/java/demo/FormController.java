@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-public class HelloWorldController {
+public class FormController {
 
     @GetMapping("/showForm")
     public String showForm() {
