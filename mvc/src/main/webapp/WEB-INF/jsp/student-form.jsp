@@ -18,6 +18,15 @@ Country:
 <form:options items="${countryOptions}"/>
 </form:select>
 <br><br>
+Favourite language:
+<br>
+C++ <form:radiobutton path="programingLanguage" value="C++" />
+<br>
+Java <form:radiobutton path="programingLanguage" value="Java" />
+<br>
+C# <form:radiobutton path="programingLanguage" value="C#" />
+
+<br><br>
 <input type="submit" value="Submit" />
 
 </form:form>

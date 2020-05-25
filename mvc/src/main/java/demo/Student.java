@@ -5,13 +5,22 @@ public class Student {
     private String name ;
     private String surname;
     private String country;
+    private String programingLanguage;
 
     public String getName() {
         return name;
     }
 
+    public String getProgramingLanguage() {
+        return programingLanguage;
+    }
+
     public String getSurname() {
         return surname;
+    }
+
+    public void setProgramingLanguage(String programingLanguage) {
+        this.programingLanguage = programingLanguage;
     }
 
     public void setName(String name) {
