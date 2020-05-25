@@ -10,6 +10,7 @@ Student registration form
 <form:form action="/student/processForm" modelAttribute="student">
 
 First name: <form:input path="name" />
+<form:errors path="name" cssClass="error" />
 <br><br>
 Surname: <form:input path="surname" />
 <br><br>
@@ -30,8 +31,8 @@ C# <form:radiobutton path="programingLanguage" value="C#" />
 I have experience with:
 <br>
 Linux<form:checkbox path="operatingSystems" value="Linux"/>
-Windows<form:checkbox path="operatingSystems" value="Linux"/>
-MacOS<form:checkbox path="operatingSystems" value="Linux"/>
+Windows<form:checkbox path="operatingSystems" value="Windows"/>
+MacOS<form:checkbox path="operatingSystems" value="MacOS"/>
 
 
 <br><br>
