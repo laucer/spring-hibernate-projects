@@ -25,6 +25,14 @@ C++ <form:radiobutton path="programingLanguage" value="C++" />
 Java <form:radiobutton path="programingLanguage" value="Java" />
 <br>
 C# <form:radiobutton path="programingLanguage" value="C#" />
+<br>
+<br>
+I have experience with:
+<br>
+Linux<form:checkbox path="operatingSystems" value="Linux"/>
+Windows<form:checkbox path="operatingSystems" value="Linux"/>
+MacOS<form:checkbox path="operatingSystems" value="Linux"/>
+
 
 <br><br>
 <input type="submit" value="Submit" />
