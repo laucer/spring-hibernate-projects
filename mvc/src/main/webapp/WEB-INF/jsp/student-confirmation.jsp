@@ -12,6 +12,8 @@ name: ${student.name}
 <br><br>
 surname: ${student.surname}
 <br><br>
+course code: ${student.courseCode}
+<br><br>
 country: ${student.country}
 <br><br>
 programingLanguage: ${student.programingLanguage}

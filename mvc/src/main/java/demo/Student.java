@@ -1,11 +1,29 @@
 package demo;
 
-import java.util.List;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 public class Student {
-
+    @NotNull(message="name is required")
+    @Pattern(regexp = "[A-Z][a-z]*", message = "Surname should start with a capital letter")
     private String name;
+
+    @NotNull(message="name is required")
+    @Pattern(regexp = "[A-Z][a-z]*", message = "Name should start with a capital letter")
     private String surname;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    @CourseCode
+    private String courseCode;
+
     private String country;
     private String programingLanguage;
     private String[] operatingSystems;

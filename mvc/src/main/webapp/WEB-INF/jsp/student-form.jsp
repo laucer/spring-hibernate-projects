@@ -3,6 +3,15 @@
 <html>
 
 <head>
+
+
+<head>
+<style>
+    .error{color:red}
+</style>
+</head>
+
+
 Student registration form
 </head>
 <body>
@@ -11,8 +20,13 @@ Student registration form
 
 First name: <form:input path="name" />
 <form:errors path="name" cssClass="error" />
+<form:errors path="name" cssClass="error"/>
 <br><br>
 Surname: <form:input path="surname" />
+<form:errors path="surname" cssClass="error"/>
+<br><br>
+Course code: <form:input path="courseCode" />
+<form:errors path="courseCode" cssClass="error"/>
 <br><br>
 Country:
 <form:select path="country">
